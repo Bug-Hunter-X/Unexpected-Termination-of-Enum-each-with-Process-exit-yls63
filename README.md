@@ -1,0 +1,3 @@
+# Elixir Enum.each Unexpected Termination
+
+This example demonstrates a potential issue where calling `Process.exit` inside an `Enum.each` anonymous function can lead to unexpected termination of the entire process, even if the exit signal is not meant to propagate to the main process.  The code snippet shows how attempting to exit a process within the `Enum.each` causes the enumeration to abruptly stop before all elements have been processed.
